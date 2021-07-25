@@ -12,9 +12,9 @@
 </head>
 
 <body>
-
+    <!-- Navbar Start -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
@@ -29,20 +29,22 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <!-- Navbar End -->
+
         <!-- Image Slider Start-->
-        <div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide container mt-3" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -143,7 +145,7 @@
         <!-- Catagory End -->
 
         <!-- Shoes Section Start -->
-        <section class="container">
+        <section class="container" id="shoes">
             <h1>Shoes</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -196,8 +198,8 @@
         <!-- Shoes Section End -->
 
         <!-- Backpack Section Start -->
-        <section class="container mt-5">
-            <h1>Bagpack</h1>
+        <section class="container mt-5" id="backpack">
+            <h1>Backpack</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100 border-0 shadow p-3 mb-5 bg-body rounded">
@@ -247,9 +249,26 @@
             </div>
         </section>
         <!-- Backpack Section End -->
-    </main>
-    <footer>
 
+        <!-- Subscribe Section Start -->
+        <Section class="container d-flex justify-content-center bg-info rounded-3 my-5 align-items-center"
+            style="height: 300px;" id="subscribe">
+            <div>
+                <h1>
+                    LET'S STAY IN TOUCH
+                </h1>
+                <p>Get updates on sales, specials and more
+                </p>
+                <input type="email" name="Email" placeholder="Your Email" class="border-1 rounded-3" id=""
+                    style="width: 300px; height: 45px;">
+                <br>
+                <button type="button" class="btn btn-warning mt-2">Warning</button>
+            </div>
+        </Section>
+        <!-- Subscribe Section End -->
+    </main>
+    <footer class="text-center">
+        <p><small>©2020. Panda Commerce. All rights reserved. Munna, Bangladesh.</small></p>
     </footer>
 
     <!-- Bootstrap Script -->
